@@ -1,6 +1,4 @@
 function! Colemak()
-    nnoremap u i
-    nnoremap l u
     " right hand nav
     nnoremap n j
     vnoremap n j
