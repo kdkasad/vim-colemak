@@ -1,23 +1,23 @@
 function! Colemak()
     " right hand nav
-    nnoremap n j
-    vnoremap n j
-    nnoremap e k
-    vnoremap e k
-    nnoremap i l
-    vnoremap i l
-    nnoremap k n
-    nnoremap K N
+    nnoremap <nowait> n j
+    vnoremap <nowait> n j
+    nnoremap <nowait> e k
+    vnoremap <nowait> e k
+    nnoremap <nowait> i l
+    vnoremap <nowait> i l
+    nnoremap <nowait> k n
+    nnoremap <nowait> K N
 
     " Use 'u' as 'i' in visual mode fyr chords such as 'vip' which would
     " become 'vup'
-    vnoremap u i
+    vnoremap <nowait> u i
 
     " m goes to insert mode, or with shift at beginning of line
-    nnoremap m i
-    nnoremap M I
+    nnoremap <nowait> m i
+    nnoremap <nowait> M I
 
     " shift+i does nothing
-    nnoremap I <nop>
+    nnoremap <nowait> I <nop>
 endfunction
 call Colemak()
